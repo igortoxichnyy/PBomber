@@ -10,7 +10,7 @@ logo = """
 ██████    █████   █       █  ██████   ███████  █     █
 """
 
-about = """About""" #TODO: ADD INFO
+about = "PBomber - SMS Bomber, written on Python. Created By IgorToxichnyy."
 
 Base = {}
 
