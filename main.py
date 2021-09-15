@@ -1,36 +1,15 @@
-import requests
+import bomb
 
-logo = """
-██████    █████   ██     ██  ██████   ███████  ██████ 
-█     █  █     █  █ █   █ █  █     █  █        █     █
-█     █  █     █  █ █   █ █  █     █  █        █     █
-██████   █     █  █  █ █  █  ██████   ███████  ██████ 
-█     █  █     █  █  █ █  █  █     █  █        █     █
-█     █  █     █  █   █   █  █     █  █        █     █
-██████    █████   █       █  ██████   ███████  █     █
-"""
+print(bomb.logo)
 
-about = """About""" #TODO: ADD INFO
-
-Base = {}
-
-def start():
-    number = input("Enter number(in international format): ")
-
-    i = 0
-    while i < len(Base):
-        requests.get(Base[i].format(number))
-        i += 1
-
-def update():
-    print("In development")
-
-print(logo)
-
+#Check internet connection
 print("Internet connection... ", end="")
+
 #TODO: MAKE CHECK INTERNET CONNECTION
+
 print("OK!")
 
+#Initialize base from baset.txt
 print("Initialization base... ", end="")
 
 file = open("base.txt", "r")
@@ -41,7 +20,7 @@ while True:
     if line == "":
         break
     else:
-        Base[i] = line
+        bomb.Base[i] = line
     i += 1
 
 print("OK!")
@@ -53,16 +32,17 @@ while True:
     action = input("Choose the action: ")
 
     if action == "1":
-        start()
+        num = input("Enter phone number(In international format): ")
+        bomb.start(num)
         continue
     elif action == "2":
-        update()
+        bomb.update()
         continue
     elif action == "3":
-        print(about)
+        print(bomb.about)
         continue
     elif action == "4":
-        answer = input("Are you sure(y/n): ")
+        answer = str(input("Are you sure(y/n): "))
         answer.lower()
         if answer == "y" or answer == "yes":
             break
