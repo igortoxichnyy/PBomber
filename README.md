@@ -1,6 +1,6 @@
 <h2>PBomber</h2>
 
-<p>PBomber - расширяемый SMS бомбер, написанный на Python.</p>
+<p>PBomber - SMS бомбер, написанный на Python.</p>
 
 <h2>Плюсы:</h2>
 
