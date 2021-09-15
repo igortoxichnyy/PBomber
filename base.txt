@@ -1,2 +1,1 @@
 https://my.telegram.org/auth/send_password?phone={0}
-https://api.eldorado.ua/v1/sign?login={0}&step=phone-check&fb_id=null&fb_token=null&lang=ru
