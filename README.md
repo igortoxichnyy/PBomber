@@ -24,6 +24,15 @@
     <li>Пока доступен только Английский язык, но в будущем будет добавлен Русский и Украинский</li>
 </ul>
 
+<h2>Установка(Windows):</h2>
+
+<ol>
+    <li>Установите python 3(При установке поставьте галочку на пункте "Add Python to PATH")</li>
+    <li>pip install requests</li>
+    <li>скачайте архив, затем распакуйте его</li>
+    <li>Перейдите в папку, дважды нажмите по run.bat</li>
+</ol>
+
 <h2>Установка(Linux):</h2>
 
 <ol>
@@ -33,7 +42,7 @@
     <li>pip install requests</li>
     <li>git clone https://github.com/igortoxichnyy/PBomber.git</li>
     <li>cd PBomber-main</li>
-    <li>python3 main.py</li>
+    <li>python3 bomber.py</li>
 </ol>
 
 <h2>В планах:</h2>
