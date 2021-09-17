@@ -23,6 +23,7 @@ def start(num):
 
 def update():
 	print(requests.get("https://raw.githubusercontent.com/igortoxichnyy/PBomber/main/bomb.py").content)
+	#Problems with read text
 
 if __name__ == '__main__':
 	update()
