@@ -22,7 +22,7 @@ def start(num):
 		i += 1
 
 def update():
-	print(requests.get("https://raw.githubusercontent.com/igortoxichnyy/PBomber/main/bomb.py").content)
+	print(requests.get("https://raw.githubusercontent.com/igortoxichnyy/PBomber/main/bomb.py", "\t").content)
 	#Problems with read text \t
 
 if __name__ == '__main__':
