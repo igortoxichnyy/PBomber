@@ -33,18 +33,6 @@
     <li>После завершения install.bat, запустите run.bat</li>
 </ol>
 
-<h2>Установка(Linux):</h2>
-
-<ol>
-    <li>sudo apt install python3</li>
-    <li>sudo apt install python-pip</li>
-    <li>sudo apt install git</li>
-    <li>pip install requests</li>
-    <li>git clone https://github.com/igortoxichnyy/PBomber.git</li>
-    <li>cd PBomber-main</li>
-    <li>python3 bomber.py</li>
-</ol>
-
 <h2>В планах:</h2>
 
 <ul>
