@@ -22,5 +22,9 @@ def start(num):
 		i += 1
 
 def update():
+	url=list(str(requests.get("https://raw.githubusercontent.com/igortoxichnyy/PBomber/main/base.txt").content))
+	print(url)
 	#i dont know how to correct this bug
-	pass
+
+if __name__ == '__main__':
+	update()
