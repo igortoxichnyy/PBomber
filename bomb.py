@@ -1,6 +1,8 @@
 import requests
 import urllib
 
+basefile = open("base.txt", "r+");
+
 logo = """
 =======      =====    ||\\     /||  =======    =======  ======= 
 ||     ||  ||     ||  || |   | ||  ||     ||  ||       ||     ||
@@ -45,7 +47,7 @@ def update():
 			i+=1
 
 	for elem in url:
-		print(elem, end="")
+		basefile.write(elem)
 
 	#NOTE: It's temporary solution, because idk why this bug appears
 

@@ -12,11 +12,9 @@ print("OK!")
 #Initialize base from baset.txt
 print("Initialization base... ", end="")
 
-file = open("base.txt", "r")
-
 i = 0
 while True:
-    line = file.readline()
+    line = bomb.basefile.readline()
     if line == "":
         break
     else:
