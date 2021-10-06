@@ -33,6 +33,16 @@
     <li>После завершения install.bat, запустите run.bat</li>
 </ol>
 
+<h2>Установка(Linux, Debian based systems):</h2>
+
+<ol>
+    <li>Откройте консоль</li>
+    <li>git clone https://github.com/igortoxichnyy/PBomber.git</li>
+    <li>cd PBomber</li>
+    <li>Установка: sh Install_Linux.sh</li>
+    <li>Запуск: sh Run_Linux.sh</li>
+</ol>
+
 <h2>В планах:</h2>
 
 <ul>
