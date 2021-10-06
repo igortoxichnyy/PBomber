@@ -30,7 +30,7 @@
     <li>Установите python 3(При установке поставьте галочку на пункте "Add Python to PATH")</li>
     <li>скачайте архив, затем распакуйте его</li>
     <li>Перейдите в папку, дважды нажмите по install.bat</li>
-    <li>После завершения install.bat, запустите run.bat</li>
+    <li>После завершения install.bat, для запуска дважды нажмите по run.bat</li>
 </ol>
 
 <h2>Установка(Linux, Debian based systems):</h2>
