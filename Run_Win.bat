@@ -1,1 +1,3 @@
-python src/bomber.py
+
+cd src
+python bomber.py
