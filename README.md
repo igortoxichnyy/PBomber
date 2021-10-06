@@ -39,8 +39,8 @@
     <li>Откройте консоль</li>
     <li>git clone https://github.com/igortoxichnyy/PBomber.git</li>
     <li>cd PBomber</li>
-    <li>Установка: sh Install_Linux.sh</li>
-    <li>Запуск: sh Run_Linux.sh</li>
+    <li>Установка: sh install.sh</li>
+    <li>Запуск: sh run.sh</li>
 </ol>
 
 <h2>В планах:</h2>
