@@ -16,7 +16,7 @@ logo = """
 =======      =====    ||       ||  =======    =======  ||     ||
 """
 
-about = "PBomber - SMS Bomber, written on Python. Created By IgorToxichnyy."
+about = "PBomber v1.0\nPBomber - SMS Bomber, written on Python. Created By IgorToxichnyy."
 
 Base = {}
 
