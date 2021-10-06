@@ -1,1 +1,0 @@
-https://my.telegram.org/auth/send_password?phone={0}
