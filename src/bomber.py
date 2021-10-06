@@ -6,11 +6,9 @@ print(bomb.logo)
 print("Internet connection... ", end="")
 
 try:
-    bomb.check_internet()
+    bomb.checkInternet()
 except bomb.requests.exceptions.ConnectionError:
-    print("ERROR: Internet connection does not exists. Press enter to exit.")
-    input()
-    bomb.sys.exit()
+    bomb.InternetError()
 
 print("OK!")
 
@@ -33,6 +31,7 @@ print("OK!")
 
 print("\nWelcome to the bomber!\n")
 
+#Menu
 while True:
     print("1. Start bombing!\n2. Update base\n3. About\n4. Exit")
     action = input("Choose the action: ")
@@ -41,14 +40,20 @@ while True:
         while True:
             num = input("Enter phone number(In international format): ")
             if num.startswith("+") and num[1:-1].isdigit():
-                bomb.start(num)
+                try:
+                    bomb.start(num)
+                except bomb.requests.exceptions.ConnectionError:
+                    bomb.InternetError()
                 break
             else:
                 print("Incorrect number")
                 continue
         continue
     elif action == "2":
-        bomb.update()
+        try:
+            bomb.update()
+        except bomb.requests.exceptions.ConnectionError:
+            bomb.InternetError()
         continue
     elif action == "3":
         print("\n" + bomb.about)
