@@ -41,10 +41,3 @@
     <li>Install: sh install.sh</li>
     <li>Run: sh run.sh</li>
 </ol>
-
-<h2>In plans:</h2>
-
-<ul>
-    <li>Release 10 october!</li>
-</ul>
-
