@@ -24,7 +24,7 @@
     <li>Absent GUI</li>
 </ul>
 
-<h2>Установка(Windows):</h2>
+<h2>Installation(Windows):</h2>
 
 <ol>
     <li>Install python 3(При установке поставьте галочку на пункте "Add Python to PATH")</li>
@@ -33,7 +33,7 @@
     <li>After end of install.bat, for run program double tap om run.bat</li>
 </ol>
 
-<h2>Установка(Linux, Debian based systems):</h2>
+<h2>Installation(Linux, Debian based systems):</h2>
 
 <ol>
     <li>Open console</li>
