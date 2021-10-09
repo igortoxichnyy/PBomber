@@ -22,6 +22,7 @@
 
 <ul>
     <li>Absent GUI</li>
+    <li>Have not built-in base</li>
 </ul>
 
 <h2>Installation(Windows):</h2>
