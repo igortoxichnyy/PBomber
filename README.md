@@ -16,7 +16,7 @@
 
 <p>On this moment base include one site, which can work with all countries, but in future we want create bases special for different countries.</p>
 
-<p>If you want to contribute on developing base for your country, send us on mail(igortoxichnyy@gmail.com or igortoxichnyy@icloud.com) mail with reference on site, which can send SMS on your country, and if it possible, we will add it on base for your country.</p>
+<p>If you want to contribute on developing base for your country, send us on mail(igortoxichnyy@gmail.com or igortoxichnyy@icloud.com(preferable)) mail with reference on site, which can send SMS on your country, and if it possible, we will add it on base for your country.</p>
 
 <h2>Minuses:</h2>
 
