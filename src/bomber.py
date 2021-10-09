@@ -33,7 +33,7 @@ print("\nWelcome to the bomber!\n")
 
 #Menu
 while True:
-    print("1. Start bombing!\n2. Update base\n3. About\n4. Exit")
+    print("1. Start bombing!\n2. Update base\n3. Change language/Сменить язык\n4. About\n5. Exit")
     action = input("Choose the action: ")
 
     if action == "1":
@@ -69,10 +69,12 @@ while True:
             bomb.InternetError()
         continue
     elif action == "3":
+        bomb.changeLang()
+    elif action == "4":
         print("\n" + bomb.about)
         input()
         continue
-    elif action == "4":
+    elif action == "5":
         answer = str(input("Are you sure(y/n): "))
         answer.lower()
         if answer == "y" or answer == "yes":
