@@ -37,17 +37,30 @@ while True:
     action = input("Choose the action: ")
 
     if action == "1":
+        num = ""
+        delay = 0
+
         while True:
             num = input("Enter phone number(In international format): ")
             if num.startswith("+") and num[1:-1].isdigit():
-                try:
-                    bomb.start(num)
-                except bomb.requests.exceptions.ConnectionError:
-                    bomb.InternetError()
                 break
             else:
                 print("Incorrect number")
                 continue
+
+        while True:
+            try:
+                delay = int(input("Enter delay(in seconds): "))
+                break
+            except ValueError:
+                print("Enter ONLY numbers")
+                continue
+
+        try:
+            bomb.start(num, delay)
+        except bomb.requests.exceptions.ConnectionError:
+            bomb.InternetError()
+
         continue
     elif action == "2":
         try:

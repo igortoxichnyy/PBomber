@@ -1,6 +1,6 @@
-#from tkinter import *
+from tkinter import *
 
-import tkinter as tk
+#import tkinter as tk
 
 window = tk.Tk()
 

